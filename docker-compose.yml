@@ -50,7 +50,7 @@ services:
   app:
     build: .
     ports:
-      - "8000"
+      - "8000:8000"
     environment:
       DATABASE_URL: "${DATABASE_URL}"
     depends_on:
@@ -84,3 +84,6 @@ services:
 networks:
   dokploy-network:
     external: true
+
+#this is a pseudo line for testing preview deployment feature
+#second line for the test

@@ -1,4 +1,5 @@
 {% load mix %}
+{% load static %}
 
 <!doctype html>
 <html>
@@ -6,8 +7,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="{% mix 'app.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/app.css' %}">
 </head>
 <body>
   {% block 'content' %}{% endblock %}
+  <img src="{% static 'images/sample.png' %}" alt="Sample Image">
+  <script src="{% static 'js/main.js' %}"></script>
 </body>
 </html>
